@@ -1,10 +1,14 @@
 // for
 // while
 // do while
-// for Of
-// for in >>> in Object
+// for of
+// for in  >>>> Object
+//////////////////////////////
+// For > Iterate over the array as well as print the series
 
-for (i = 0; i < 5; i++) {
+//  for(variable, condition, increment)  syntax
+
+for (let i = 0; i < 5; i++) {
   console.log(i);
 }
 0;
@@ -12,65 +16,101 @@ for (i = 0; i < 5; i++) {
 2;
 3;
 4;
-var a = ["delhi", "mumbai", "fenoa", "boston"];
 
-for (let i = 0; i < a.length; i++) {
-  console.log(a[i]);
+var a = ["Delhi", "Mumbai", "Nice", "Pisa", "Genoa", "Boston"];
+for (let index = 0; index < a.length; index++) {
+  console.log(a[index]);
 }
-delhi;
-mumbai;
-fenoa;
-boston;
+Delhi;
+Mumbai;
+Nice;
+Pisa;
+Genoa;
+Boston;
+
+var a = ["Delhi", "Mumbai", "Nice", "Pisa", "Genoa", "Boston"];
+for (i = 0; i < a.length; i++) {
+  console.log(`<li>${a[i]}</li>`);
+}
+{
+  /* <li>Delhi</li>
+<li>Mumbai</li>
+<li>Nice</li>
+<li>Pis<li>Genoa</li>
+<li>Boston</li>  */
+}
 
 var a = [
-  "delhi",
-  "mumbai",
-  ["red", ["audi", "bmw", "merx"], "yellow", "green"],
-  "fenoa",
-  "boston",
+  "Delhi",
+  "Mumbai",
+  ["Red", "Purple", "Yellow", "Green"],
+  "Genoa",
+  "Boston",
 ];
-for (let i = 0; i < a.length; i++) {
-  if (Arrya.isArray(a[i])) {
-    for (j = 0; j < a[i].length; j++) console.log(a[i][j]);
+
+for (let index = 0; index < a.length; index++) {
+  if (Array.isArray(a[index])) {
+    for (let j = 0; j < a[index].length; j++) {
+      console.log(a[index][j]);
+    }
   } else {
-    console.log(a[i]);
+    console.log(a[index]);
   }
 }
 
-///  while
+Delhi;
+Mumbai;
+Red;
+Purple;
+Yellow;
+Green;
+Genoa;
+Boston;
 
-var i = 0;
+////while
+var i = 10;
 while (i < 5) {
   console.log(i);
   i++;
 }
 
-/// do while
-
+////do while
 var i = 10;
 do {
   console.log(i);
   i++;
 } while (i < 5);
 
-/// for of  ES6
-var city = ["delhi", "mumbai", "fenoa", "boston"];
+//es6 for of
+
+var city = ["Delhi", "Mumbai", "Nice", "Pisa", "Genoa", "Boston"];
 for (mycity of city) {
   console.log(mycity);
 }
 
 var city = [
-  "delhi",
-  "mumbai",
-  ["red", ["audi", "bmw", "merx"], "yellow", "green"],
-  "fenoa",
-  "boston",
+  "Delhi",
+  "Mumbai",
+  ["Red", "Purple", "Yellow", "Green"],
+  "Genoa",
+  "Boston",
 ];
 
 for (mycity of city) {
   if (Array.isArray(mycity)) {
-    for (mycolor of city) {
+    for (mycolor of mycity) {
       console.log(mycolor);
     }
-  } else console.log(mycity);
+  } else {
+    console.log(mycity);
+  }
 }
+
+Delhi;
+Mumbai;
+Red;
+Purple;
+Yellow;
+Green;
+Genoa;
+Boston;

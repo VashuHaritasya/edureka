@@ -88,6 +88,9 @@ city.splice(2,1)
 city.splice(4,2,'Genoa')
 ['Delhi', 'Mumbai', 'Nice', 'Pisa', 'Genoa', 'Boston']
 
+
+// indexOF
+
 var a = ['Delhi', 'Mumbai', 'Nice', 'Pisa', 'Genoa', 'Boston']
 undefined
 a.indexOf('Paris')
@@ -114,6 +117,8 @@ Array.isArray(a)
 true
 Array.isArray(b)
 false
+
+// Nested array
 
 var a = ['Delhi', 'Mumbai',['Red',['Audi','Bmw','Merc'],'Yellow',"Green"], 'Genoa', 'Boston']
 a[0]
