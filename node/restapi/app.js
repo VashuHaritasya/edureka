@@ -188,14 +188,14 @@ app.delete("/deleteOrder/:id", (req, res) => {
   });
 });
 
-//connection with db
-// MongoClient.connect(mongoUrl, (err, client) => {
-//   if (err) console.log("Error while connecting");
-//   db = client.db("sepintern");
-//   app.listen(port, () => {
-//     console.log(`Server is running on port ${port}`);
-//   });
-// });
+// connection with db
+MongoClient.connect(mongoUrl, (err, client) => {
+  if (err) console.log("Error while connecting");
+  db = client.db("sepintern");
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
+});
 
 // // list of restaurants
 // app.get('/restaurants/:stateId',(req,res)=>{
